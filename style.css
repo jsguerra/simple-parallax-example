@@ -27,6 +27,9 @@ img {
 .site-header {
   width: 100%;
   min-height: 400px;
+  background-image: url(images/books-example.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 .site-header .container {
