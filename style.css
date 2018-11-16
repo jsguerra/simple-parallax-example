@@ -85,6 +85,10 @@ p {
   z-index: 2;
 }
 
+.site-header h1, .site-header p {
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
 /* Main Section
    ============ */
 article {
@@ -97,5 +101,9 @@ article {
 /* Site Footer
    =========== */
 .site-footer {
+  border-top: 1px solid #aaa;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
   text-align: center;
+  color: #999;
 }
