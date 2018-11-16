@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-  var bg = document.querySelector('.site-header');
-  var bgImage = bg.style.backgroundImage;
-
-  console.log(bgImage);
+  var headerText = document.querySelector('.site-header .container');
+  var bgImage = document.querySelector('.site-header .bgEl');
 
   function setTranslate(xPos, yPos, el) {
     el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
@@ -17,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function(){
       xScrollPosition = window.scrollX;
       yScrollPosition = window.scrollY;
 
-      setTranslate(0, yScrollPosition * -0.2, bgImage);
+      setTranslate(0, yScrollPosition * -0.4, headerText);
+      setTranslate(0, yScrollPosition * 0.7, bgImage);
 
       requestAnimationFrame(scrollLoop);
   }
