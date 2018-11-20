@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
       setTranslate(0, yScrollPosition * -0.4, headerText);
       setTranslate(0, yScrollPosition * 0.7, bgImage);
       setTranslate(0, yScrollPosition * 0.7, objectBlock);
-      setTranslateRotate(yScrollPosition * 0.9, hexObject);
+      setTranslateRotate(yScrollPosition * 1.2, hexObject);
 
       requestAnimationFrame(scrollLoop);
   }
