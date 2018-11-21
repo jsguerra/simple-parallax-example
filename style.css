@@ -102,6 +102,7 @@ p {
    ============ */
 main {
   position: relative;
+  overflow: hidden;
 }
 
 article {
@@ -113,43 +114,119 @@ article {
 
 /* Shapes
   ============= */
-  .object {
-    position: absolute;
-    top: 0;
-    left: 2rem;
-    z-index: -1;
-    opacity: 0.5;
-    padding: 0 2rem;
-  }
+.object {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  z-index: -1;
+  opacity: 0.5;
+  padding: 0 2rem;
+}
 
-  .hexagon {
-    width: 100px;
-    height: 55px;
-    background: #ffcccc;
-    position: relative;
-  }
-  .hexagon:before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #ffcccc;
-  }
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #ffcccc;
-  }
+.object2 {
+  position: absolute;
+  top: 2rem;
+  left: 45%;
+  z-index: -1;
+  opacity: 0.25;
+  padding: 0 2rem;
+}
+
+.object3 {
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+  z-index: -1;
+  opacity: 0.75;
+  padding: 0 2rem;
+}
+
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: #ffcccc;
+  position: relative;
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #ffcccc;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #ffcccc;
+}
+
+.object2 .hexagon {
+  width: 200px;
+  height: 100px;
+  background: #ffcccc;
+  position: relative;
+}
+.object2 .hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 25px solid #ffcccc;
+}
+.object2 .hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 25px solid #ffcccc;
+}
+
+.object3 .hexagon {
+  width: 50px;
+  height: 25px;
+  background: #ffcccc;
+  position: relative;
+}
+.object3 .hexagon:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 12px solid #ffcccc;
+}
+.object3 .hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 12px solid #ffcccc;
+}
 
 /* Site Footer
    =========== */
