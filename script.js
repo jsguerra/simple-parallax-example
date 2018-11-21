@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", function(){
   var headerText = document.querySelector('.site-header .container');
   var bgImage = document.querySelector('.site-header .bgEl');
   var objectBlock = document.querySelector('.object');
+  var objectBlockClone = document.querySelector('.object-clone');
   var objectBlock2 = document.querySelector('.object2');
   var objectBlock3 = document.querySelector('.object3');
   var hexObject = document.querySelector('.hexagon');
+  var hexObjectClone = document.querySelector('.object-clone .hexagon');
   var hexObject2 = document.querySelector('.object2 .hexagon');
   var hexObject3 = document.querySelector('.object3 .hexagon');
 
@@ -30,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
       setTranslate(0, yScrollPosition * 0.7, objectBlock);
       setTranslateRotate(yScrollPosition * 1.2, hexObject);
+
+      setTranslate(0, yScrollPosition * 0.9, objectBlockClone);
+      setTranslateRotate(yScrollPosition * -1.4, hexObjectClone);
 
       setTranslate(0, yScrollPosition * 2, objectBlock2);
       setTranslateRotate(yScrollPosition * -0.9, hexObject2);
