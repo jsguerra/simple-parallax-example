@@ -150,6 +150,15 @@ article {
   padding: 0 2rem;
 }
 
+.object4 {
+  position: absolute;
+  top: -4rem;
+  left: 35%;
+  z-index: 1;
+  opacity: 1;
+  padding: 0 2rem;
+}
+
 .hexagon {
   width: 100px;
   height: 55px;
@@ -264,6 +273,10 @@ article {
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-top: 12px solid #ffcccc;
+}
+
+.object4 svg {
+  width: 150px;
 }
 
 /* Site Footer
