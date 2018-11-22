@@ -5,10 +5,13 @@ document.addEventListener("DOMContentLoaded", function(){
   var objectBlockClone = document.querySelector('.object-clone');
   var objectBlock2 = document.querySelector('.object2');
   var objectBlock3 = document.querySelector('.object3');
+  var objectBlock4 = document.querySelector('.object4');
   var hexObject = document.querySelector('.hexagon');
   var hexObjectClone = document.querySelector('.object-clone .hexagon');
   var hexObject2 = document.querySelector('.object2 .hexagon');
   var hexObject3 = document.querySelector('.object3 .hexagon');
+  var svgObject = document.querySelector('.object4 svg');
+
 
   function setTranslate(xPos, yPos, el) {
     el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
@@ -36,11 +39,14 @@ document.addEventListener("DOMContentLoaded", function(){
       setTranslate(0, yScrollPosition * 0.9, objectBlockClone);
       setTranslateRotate(yScrollPosition * -1.4, hexObjectClone);
 
-      setTranslate(0, yScrollPosition * 2, objectBlock2);
+      setTranslate(0, yScrollPosition * 1.5, objectBlock2);
       setTranslateRotate(yScrollPosition * -0.9, hexObject2);
 
       setTranslate(0, yScrollPosition * 0.9, objectBlock3);
       setTranslateRotate(yScrollPosition * 1.5, hexObject3);
+
+      setTranslate(0, yScrollPosition * 1.30, objectBlock4);
+      setTranslateRotate(yScrollPosition * 0.9, svgObject);
 
       requestAnimationFrame(scrollLoop);
   }
