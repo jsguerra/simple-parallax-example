@@ -33,17 +33,17 @@ document.addEventListener("DOMContentLoaded", function(){
       setTranslate(0, yScrollPosition * -0.4, headerText);
       setTranslate(0, yScrollPosition * 0.7, bgImage);
 
-      // setTranslate(0, yScrollPosition * 0.7, objectBlock);
-      // setTranslateRotate(yScrollPosition * 1.2, hexObject);
+      setTranslate(0, yScrollPosition * 0.2, objectBlock);
+      setTranslateRotate(yScrollPosition * 1.2, hexObject);
 
-      // setTranslate(0, yScrollPosition * 0.9, objectBlockClone);
-      // setTranslateRotate(yScrollPosition * -1.4, hexObjectClone);
+      setTranslate(0, yScrollPosition * 0.2, objectBlockClone);
+      setTranslateRotate(yScrollPosition * -1.4, hexObjectClone);
 
       // setTranslate(0, yScrollPosition * 1.5, objectBlock2);
       // setTranslateRotate(yScrollPosition * -0.9, hexObject2);
 
-      // setTranslate(0, yScrollPosition * 0.9, objectBlock3);
-      // setTranslateRotate(yScrollPosition * 1.5, hexObject3);
+      setTranslate(0, yScrollPosition * 0.2, objectBlock3);
+      setTranslateRotate(yScrollPosition * 1.5, hexObject3);
 
       // setTranslate(0, yScrollPosition * 1.30, objectBlock4);
       // setTranslateRotate(yScrollPosition * 0.9, svgObject);
