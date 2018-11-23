@@ -59,15 +59,24 @@ p {
   overflow: hidden;
 }
 
-.site-header .bgEl {
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
+.site-header .absolute {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+  overflow: hidden;
+}
+
+.site-header .absolute .bgEl {
+  width: 100%;
+  height: 100%;
+  /* background-position: center center;
+  background-size: cover; */
+  position: fixed;
+  top: -332px;
+  left: 0;
 }
 
 .site-header::after {
@@ -82,15 +91,16 @@ p {
 
 .site-header .container {
   width: 100%;
-  max-width: 700px;
-  height: 100%;
+  /* max-width: 700px;
+  height: 100%; */
   margin: auto;
-  padding-bottom: 60px;
-  display: flex;
+  /* padding-bottom: 60px; */
+  /* display: flex;
   flex-flow: column wrap;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   text-align: center;
-  position: relative;
+  position: fixed;
+  top: 200px;
   z-index: 2;
 }
 
@@ -103,6 +113,8 @@ p {
 main {
   position: relative;
   overflow: hidden;
+  background: white;
+  z-index: 2;
 }
 
 article {
@@ -118,7 +130,7 @@ article {
   position: absolute;
   top: 3rem;
   left: 2rem;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.5;
   padding: 0 2rem;
 }
@@ -127,7 +139,7 @@ article {
   position: absolute;
   top: 4rem;
   left: 5rem;
-  z-index: -1;
+  z-index: 1;
   opacity: 1;
   padding: 0 2rem;
 }
@@ -136,7 +148,7 @@ article {
   position: absolute;
   top: 2rem;
   left: 45%;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.25;
   padding: 0 2rem;
 }
@@ -145,7 +157,7 @@ article {
   position: absolute;
   top: 7rem;
   right: 2rem;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.75;
   padding: 0 2rem;
 }
@@ -154,7 +166,7 @@ article {
   position: absolute;
   top: -4rem;
   left: 35%;
-  z-index: 1;
+  z-index: 2;
   opacity: 1;
   padding: 0 2rem;
 }
@@ -287,4 +299,5 @@ article {
   padding-bottom: 0.5rem;
   text-align: center;
   color: #999;
+  background: white;
 }
