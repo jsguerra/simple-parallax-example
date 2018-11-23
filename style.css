@@ -127,8 +127,8 @@ article {
 /* Shapes
   ============= */
 .object {
-  position: absolute;
-  top: 3rem;
+  position: fixed;
+  top: 450px;
   left: 2rem;
   z-index: 1;
   opacity: 0.5;
@@ -136,8 +136,8 @@ article {
 }
 
 .object-clone {
-  position: absolute;
-  top: 4rem;
+  position: fixed;
+  top: 465px;
   left: 5rem;
   z-index: 1;
   opacity: 1;
@@ -154,8 +154,8 @@ article {
 }
 
 .object3 {
-  position: absolute;
-  top: 7rem;
+  position: fixed;
+  top: 450px;
   right: 2rem;
   z-index: 1;
   opacity: 0.75;
