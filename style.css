@@ -136,21 +136,12 @@ article {
   padding: 0 2rem;
 }
 
-.object-clone {
+.object2 {
   position: fixed;
   top: 465px;
   left: 5rem;
   z-index: 1;
   opacity: 1;
-  padding: 0 2rem;
-}
-
-.object2 {
-  position: absolute;
-  top: 2rem;
-  left: 45%;
-  z-index: 1;
-  opacity: 0.25;
   padding: 0 2rem;
 }
 
@@ -164,11 +155,11 @@ article {
 }
 
 .object4 {
-  position: absolute;
-  top: -4rem;
-  left: 35%;
-  z-index: 2;
-  opacity: 1;
+  position: fixed;
+  top: 450px;
+  right: 2rem;
+  z-index: 1;
+  opacity: 0.75;
   padding: 0 2rem;
 }
 
@@ -201,38 +192,9 @@ article {
   border-top: 25px solid #ffcccc;
 }
 
-.object-clone .hexagon {
+.object2 .hexagon {
   width: 110px;
   height: 70px;
-  background: #ffcccc;
-  position: relative;
-}
-.object-clone .hexagon:before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 55px solid transparent;
-  border-right: 55px solid transparent;
-  border-bottom: 25px solid #ffcccc;
-}
-.object-clone .hexagon:after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 55px solid transparent;
-  border-right: 55px solid transparent;
-  border-top: 25px solid #ffcccc;
-}
-
-.object2 .hexagon {
-  width: 200px;
-  height: 100px;
   background: #ffcccc;
   position: relative;
 }
@@ -243,8 +205,8 @@ article {
   left: 0;
   width: 0;
   height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
   border-bottom: 25px solid #ffcccc;
 }
 .object2 .hexagon:after {
@@ -254,8 +216,8 @@ article {
   left: 0;
   width: 0;
   height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
   border-top: 25px solid #ffcccc;
 }
 
