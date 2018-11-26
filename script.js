@@ -1,22 +1,26 @@
 document.addEventListener("DOMContentLoaded", function(){
+  // Header
   var headerText = document.querySelector('.site-header .container');
   var bgImage = document.querySelector('.site-header .bgEl');
+
+  // Object blocks on page
   var objectBlock = document.querySelector('.object');
-  var objectBlockClone = document.querySelector('.object-clone');
-  // var objectBlock2 = document.querySelector('.object2');
+  var objectBlock2 = document.querySelector('.object2');
   var objectBlock3 = document.querySelector('.object3');
-  // var objectBlock4 = document.querySelector('.object4');
+  var objectBlock4 = document.querySelector('.object4');
+
+  // Shapes in the object blocks
   var hexObject = document.querySelector('.hexagon');
-  var hexObjectClone = document.querySelector('.object-clone .hexagon');
-  // var hexObject2 = document.querySelector('.object2 .hexagon');
+  var hexObject2 = document.querySelector('.object2 .hexagon');
   var hexObject3 = document.querySelector('.object3 .hexagon');
-  // var svgObject = document.querySelector('.object4 svg');
+  var svgObject = document.querySelector('.object4 svg');
 
-
+  // Translate Function
   function setTranslate(xPos, yPos, el) {
     el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
   }
 
+  // Rotate Function
   function setTranslateRotate(yPos, el) {
     el.style.transform = "rotate(" + yPos + "deg)"
   }
@@ -34,19 +38,14 @@ document.addEventListener("DOMContentLoaded", function(){
       setTranslate(0, yScrollPosition * 0.7, bgImage);
 
       setTranslate(0, yScrollPosition * 0.2, objectBlock);
-      setTranslateRotate(yScrollPosition * 1.2, hexObject);
-
-      setTranslate(0, yScrollPosition * 0.2, objectBlockClone);
-      setTranslateRotate(yScrollPosition * -1.4, hexObjectClone);
-
-      // setTranslate(0, yScrollPosition * 1.5, objectBlock2);
-      // setTranslateRotate(yScrollPosition * -0.9, hexObject2);
-
+      setTranslate(0, yScrollPosition * 0.2, objectBlock2);
       setTranslate(0, yScrollPosition * 0.2, objectBlock3);
-      setTranslateRotate(yScrollPosition * 1.5, hexObject3);
+      setTranslate(0, 0, objectBlock4);
 
-      // setTranslate(0, yScrollPosition * 1.30, objectBlock4);
-      // setTranslateRotate(yScrollPosition * 0.9, svgObject);
+      setTranslateRotate(yScrollPosition * 1.2, hexObject);
+      setTranslateRotate(yScrollPosition * -1.4, hexObject2);
+      setTranslateRotate(yScrollPosition * 1.5, hexObject3);
+      setTranslateRotate(yScrollPosition * 0.9, svgObject);
 
       requestAnimationFrame(scrollLoop);
   }
