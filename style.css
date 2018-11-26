@@ -59,7 +59,7 @@ p {
   overflow: hidden;
 }
 
-.site-header .absolute {
+/* .site-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -67,9 +67,9 @@ p {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-}
+} */
 
-.site-header .absolute .bgEl {
+.site-header .bgEl {
   width: 100%;
   height: 100%;
   /* background-position: center center;
@@ -77,6 +77,7 @@ p {
   position: fixed;
   top: -332px;
   left: 0;
+  z-index: -1;
 }
 
 .site-header::after {
