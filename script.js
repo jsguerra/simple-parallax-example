@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(){
   // Header
-  var headerText = document.querySelector('.site-header .container');
-  var bgImage = document.querySelector('.site-header .bgEl');
+  var headerText = document.querySelector('.site-header .container'),
+      bgImage = document.querySelector('.site-header .bgEl');
 
   // Object blocks on page
-  var objectBlock = document.querySelector('.object');
-  var objectBlock2 = document.querySelector('.object2');
-  var objectBlock3 = document.querySelector('.object3');
-  var objectBlock4 = document.querySelector('.object4');
+  var objectBlock = document.querySelector('.object'),
+      objectBlock2 = document.querySelector('.object2'),
+      objectBlock3 = document.querySelector('.object3'),
+      objectBlock4 = document.querySelector('.object4');
 
   // Shapes in the object blocks
-  var hexObject = document.querySelector('.hexagon');
-  var hexObject2 = document.querySelector('.object2 .hexagon');
-  var hexObject3 = document.querySelector('.object3 .hexagon');
-  var svgObject = document.querySelector('.object4 svg');
+  var hexObject = document.querySelector('.hexagon'),
+      hexObject2 = document.querySelector('.object2 .hexagon'),
+      hexObject3 = document.querySelector('.object3 .hexagon'),
+      svgObject = document.querySelector('.object4 svg');
 
   // Translate Function
   function setTranslate(xPos, yPos, el) {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
       setTranslateRotate(yScrollPosition * 1.2, hexObject);
       setTranslateRotate(yScrollPosition * -1.4, hexObject2);
       setTranslateRotate(yScrollPosition * 1.5, hexObject3);
-      setTranslateRotate(yScrollPosition * 0.9, svgObject);
+      setTranslateRotate(yScrollPosition * 0.4, svgObject);
 
       requestAnimationFrame(scrollLoop);
   }
