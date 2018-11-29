@@ -1,28 +1,77 @@
 /* Minimal CSS Reset
    ================= */
-   html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Global Site Settings
-     ==================== */
+  html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Site Settings
+    ==================== */
+*::before,
+*::after {
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+html {
+
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.618;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+body > header {
+  background-color: #f0f5f9;
+  height: 350px;
+  text-align: center;
+  background-image: url('images/books-example.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+body > footer {
+  background-color: #202020;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  padding: 60px 0;
+}
+
+article {
+  max-width: 760px;
+  margin: auto;
+}
