@@ -50,3 +50,19 @@ document.addEventListener("DOMContentLoaded", function(){
       requestAnimationFrame(scrollLoop);
   }
 });
+
+/*!
+ * Immediately Invoked Function Expression Boilerplate
+ * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
+ */
+;(function (window, document, undefined) {
+
+    'use strict';
+
+    var today = new Date(),
+        currentYear = today.getFullYear(),
+        colophon = document.querySelector('.colophon');
+
+    colophon.innerHTML = 'Copyright &copy; ' + currentYear;
+
+})(window, document);
