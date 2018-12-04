@@ -40,7 +40,15 @@
     </article>
   </main>
   <footer>
-    <p>Copyright 2018 Colophon</p>
+    <p>Copyright &copy; <span class="date"></span> Colophon</p>
   </footer>
+  <script>
+    var today = new Date();
+    var year = today.getFullYear();
+
+    var el = document.querySelector('.date');
+
+    el.innerHTML = year;
+  </script>
 </body>
 </html>
